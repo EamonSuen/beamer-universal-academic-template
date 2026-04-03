@@ -7,9 +7,30 @@
 \usepackage{amsmath, amssymb}
 \usepackage{multicol}
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta, shapes.geometric, positioning, calc, fit}
 \usepackage{csquotes}
+\usepackage{colortbl}       % \rowcolor in tables
+\usepackage{listings}       % code listings
+\usepackage{ccicons}    % Creative Commons icons
+
+% listings global style
+\lstset{
+  basicstyle   = \ttfamily\scriptsize,
+  keywordstyle = \color{blue!80!black}\bfseries,
+  commentstyle = \color{gray}\itshape,
+  stringstyle  = \color{teal},
+  numbers      = left,
+  numberstyle  = \tiny\color{gray},
+  numbersep    = 6pt,
+  frame        = single,
+  rulecolor    = \color{gray!40},
+  breaklines   = true,
+  tabsize      = 2,
+  showstringspaces = false,
+}
 \usepackage{hyperref}
 \usepackage{appendixnumberbeamer}
+
 \usepackage[
   backend=biber,
   style=authoryear,
@@ -106,6 +127,10 @@
 \input{sections/05_conclusion}
 \appendix
 \input{sections/99_appendix}
+
+% ---- 样例库 ----
+% 取消下一行注释即可将幻灯片样例库编译进文档（仅供参考，不计入正文页码）：
+\input{sections/00_slide_gallery}
 
 \begin{frame}[allowframebreaks]{References}
   \printbibliography
