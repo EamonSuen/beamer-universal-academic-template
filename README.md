@@ -1,5 +1,10 @@
 # Beamer Universal Academic Template
 
+> [!IMPORTANT]
+> This repository has moved to <https://github.com/EamonSuen/beamer-academic-template>.
+> The new repository is the canonical maintained version and includes both the Agent Skill and the bundled Beamer starter template.
+> This standalone template repository is kept as a historical reference.
+
 一个通用的学术 `beamer` 演示模板，适合课程汇报、论文答辩、研究展示和 seminar。
 
 This repository is a reusable Chinese/English academic Beamer template for
