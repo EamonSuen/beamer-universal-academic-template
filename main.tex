@@ -10,6 +10,7 @@
 \usetikzlibrary{arrows.meta, shapes.geometric, positioning, calc, fit}
 \usepackage{csquotes}
 \usepackage{colortbl}       % \rowcolor in tables
+\usepackage[most]{tcolorbox} % academic highlight boxes
 \usepackage{listings}       % code listings
 \usepackage{ccicons}    % Creative Commons icons
 
@@ -92,6 +93,85 @@
 \useoutertheme{infolines}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{caption}[numbered]
+
+% Academic highlight boxes for tables, findings, methods, and caveats.
+\tcbset{
+  academicboxbase/.style={
+    enhanced,
+    sharp corners=downhill,
+    arc=2pt,
+    boxrule=0.7pt,
+    leftrule=1.6pt,
+    left=5pt,
+    right=5pt,
+    top=4pt,
+    bottom=4pt,
+    toptitle=2pt,
+    bottomtitle=2pt,
+    fonttitle=\bfseries,
+    coltitle=white,
+    attach boxed title to top left={xshift=5pt, yshift*=-\tcboxedtitleheight/2},
+    boxed title style={
+      sharp corners=downhill,
+      arc=2pt,
+      boxrule=0pt,
+      left=4pt,
+      right=4pt,
+      top=1pt,
+      bottom=1pt
+    },
+    before skip=0.55em,
+    after skip=0.55em
+  }
+}
+
+\newtcolorbox{regressionbox}[1]{
+  academicboxbase,
+  title={#1},
+  colback=blue!5,
+  colframe=blue!65!black,
+  colbacktitle=blue!65!black
+}
+
+\newtcolorbox{findingbox}[1]{
+  academicboxbase,
+  title={#1},
+  colback=green!6,
+  colframe=green!45!black,
+  colbacktitle=green!45!black
+}
+
+\newtcolorbox{methodbox}[1]{
+  academicboxbase,
+  title={#1},
+  colback=cyan!5,
+  colframe=cyan!55!black,
+  colbacktitle=cyan!55!black
+}
+
+\newtcolorbox{robustbox}[1]{
+  academicboxbase,
+  title={#1},
+  colback=violet!5,
+  colframe=violet!65!black,
+  colbacktitle=violet!65!black
+}
+
+\newtcolorbox{policybox}[1]{
+  academicboxbase,
+  title={#1},
+  colback=orange!7,
+  colframe=orange!70!black,
+  colbacktitle=orange!70!black
+}
+
+\newtcolorbox{cautionbox}[1]{
+  academicboxbase,
+  title={#1},
+  colback=red!5,
+  colframe=red!65!black,
+  colbacktitle=red!65!black
+}
 
 \title{Universal Academic Beamer Template}
 \subtitle{A Reusable Structure for Research Presentations}
