@@ -1,7 +1,7 @@
 # Beamer Universal Academic Template
 
 > [!IMPORTANT]
-> This repository has moved to <https://github.com/EamonSuen/beamer-academic-template>.
+> This repository has moved to <https://github.com/EamonSuen/beamer-skills>.
 > The new repository is the canonical maintained version and includes both the Agent Skill and the bundled Beamer starter template.
 > This standalone template repository is kept as a historical reference.
 
@@ -140,7 +140,7 @@ git clone https://github.com/Haixing-Hu/latex-chinese-fonts.git /Users/eamonsuen
 
 配套 Agent Skill：
 
-- <https://github.com/EamonSuen/beamer-academic-template>
+- <https://github.com/EamonSuen/beamer-skills>
 
 该 skill 可安装到 Codex 或 Claude Code，用于让 agent 按本模板创建和维护学术 Beamer 幻灯片。
 
